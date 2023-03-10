@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    height: 100vn;
+    justify-content: center;
+    align-items:center;
+    padding: 25px;
+    background: linear-gradient( 135deg,#F0A04B,#C1AEFC,#D1FFF3);
+
+}
+.form-container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 50px 30px;
+    border-radius: 20px;
+}
+.form-container .form-field {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    left:0 ;
+    bottom: 0;
+}
+.form-container .form-field::before{
+    content:''; 
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient( 135deg,#EDE9D5,#E7AB9A,#FFEBB4);
+}
+.form-container form .form-field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px;
+}
+form .form-field {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.form-field input {
+    height: 35px;
+    width: 100%;
+    outline: non;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width:2px;
+    transition: all 0.3s ease  ;
+}
+.form-field input :focus,
+.form-field input :valid {
+    border-color:#E7AB9A ;
+}
+.form-field select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    }
+    .form-field select {
+        height: 40px;
+        }
+form .form-submit {
+    height: 45px;
+    width: 45px 0;
+}
+.form-submit {
+    width: 100%;
+    outline-color: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:5px;
+    letter-spacing:1px;
+    background: linear-gradient( 135deg,#EDE9D5,#E7AB9A,#FFEBB4);
+}
+form .form-submit:hover {
+    background: linear-gradient( 135deg,#EDE9D5,#E7AB9A,#FFEBB4);
+}
+@media(max-width:584px) {
+    .form-container {
+        max-width: 100%;
+}
+form .form-field {
+    margin-bottom: 15px;
+    width: 100%;
+}
+}

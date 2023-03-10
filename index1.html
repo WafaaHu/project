@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Data Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Employees Data Form</h1>
+        </div>
+        <form action="#">
+            <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-field">
+            <label for="phone">Date of Employment</label>
+            <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-field">
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+            </select>
+            </div>
+            <div class="form-field">
+            <label for="position">Position</label>
+            <select id="position" name="position" required>
+                <option value="" disabled selected>Select Position</option>
+                <option value="Developer">Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Manager">Manager</option>
+            </select>
+            </div>
+            <div class="form-field">
+            <label for="salary">Salary</label>
+            <input type="text" id="salary" name="salary" required>
+            </div>
+            <button class="form-submit" type="submit">Save</button>
+        </form>
+        </div>
+</body>
+</html>
